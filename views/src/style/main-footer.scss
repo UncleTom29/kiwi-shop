@@ -1,0 +1,128 @@
+/*variables*/
+$main-color: rgb(221, 28, 28);
+
+.main-footer {
+  background-color: #fff;
+  padding-top: 25px;
+  position: relative;
+
+  &:after {
+    background: linear-gradient(
+      to right,
+      #977272 0%,
+      #927070 0%,
+      #cec5c5 25%,
+      #ffcd02 25%,
+      #ffcd02 50%,
+      #e84f47 50%,
+      #e84f47 75%,
+      #65c1ac 75%,
+      #244f86 100%,
+      #244f86 100%
+    );
+    position: absolute;
+    content: "";
+    height: 5px;
+    right: 0;
+    left: 0;
+    top: 0;
+  }
+
+  .row {
+    h2 {
+      margin-bottom: 15px;
+      font-size: 23px;
+      font-weight: 600;
+      color: $main-color;
+      text-transform: uppercase;
+    }
+
+    .shop-summary {
+      text-align: center;
+    }
+
+    ul {
+      padding-left: 0;
+      li {
+        list-style: none;
+
+        a {
+          text-decoration: none;
+          color: #919191;
+
+          &:hover {
+            color: rgb(102, 101, 101);
+          }
+        }
+      }
+    }
+  }
+}
+
+/****************** Sign up  *************************/
+.main-footer {
+  .signup {
+    margin: 0 auto 35px;
+    border: 1px solid #e5e5e5;
+    background-color: #f6f6f6;
+    padding: 20px;
+  }
+  .title {
+    display: flex;
+  }
+
+  .title .signup-icon {
+    flex: none;
+    display: block;
+    width: 29px;
+    height: 28px;
+    line-height: 28px;
+    background-color: $main-color;
+    color: #fff;
+    font-weight: 900;
+    font-size: 20px;
+    text-align: center;
+    margin-right: 10px;
+    position: relative;
+    top: 8px;
+  }
+  .title p {
+    font-size: 1.4rem;
+    line-height: 20px !important;
+    font-weight: 700;
+  }
+
+  .signup-1b {
+    background-color: #666;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 10px 10px 10px 12px;
+    margin-bottom: 5px;
+    display: inline-block;
+  }
+  .signup-1b::after {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 14px;
+    margin-left: 10px;
+    background: url(https://g.newsweek.com/www/images/icon-arrow-right.svg) center/contain
+      no-repeat;
+  }
+  .signup-1b:hover {
+    background-color: #999;
+    text-decoration: none;
+    color: white;
+  }
+
+  .signup-2b {
+    color: #333;
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+  .signup-2b:hover {
+    text-decoration: none;
+    color: black;
+  }
+}

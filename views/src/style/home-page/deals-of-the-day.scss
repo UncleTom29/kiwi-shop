@@ -1,0 +1,57 @@
+.deals-of-the-day {
+  margin: 40px 0;
+  position: relative;
+  background: {
+    image: url("./../../assets/pictures/stars.jpg");
+  }
+
+  .title {
+    font-size: 3em;
+    text-align: center;
+    color: white;
+    line-height: 40px;
+    position: relative;
+    top: 120px;
+
+    @media (max-width: 992px) {
+      top: 30px;
+    }
+  }
+
+  /*slider*/
+  .slick-slider {
+    .fa-arrow-left {
+      box-shadow: grey 0px 0px 5px 3px;
+      color: grey;
+      background-color: white;
+      padding: 15px;
+      border-radius: 50%;
+      position: absolute;
+      bottom: 50% !important;
+      left: -12px;
+      cursor: pointer;
+    }
+    .fa-arrow-right {
+      box-shadow: grey 0px 0px 5px 3px;
+      color: grey;
+      background-color: white;
+      padding: 15px;
+      border-radius: 50%;
+      position: absolute;
+      left: 97%;
+      top: 40% !important;
+      cursor: pointer;
+      z-index: 5;
+
+      @media (max-width: 576px) {
+        left: 90%;
+      }
+    }
+
+    .slick-dots {
+      li {
+        box-shadow: grey 0px 0px 5px 3px;
+      }
+    }
+  }
+}

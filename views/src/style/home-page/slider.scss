@@ -1,0 +1,16 @@
+.main-slider {
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-top: -50px;
+
+  .coverflow__container__1P-xE {
+    background-color: #fff;
+    height: 570px !important;
+  }
+
+  .coverflow__figure__3bk_C {
+    @media (max-width: 992px) {
+      width: 30% !important;
+    }
+  }
+}

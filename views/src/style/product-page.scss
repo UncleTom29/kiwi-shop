@@ -1,0 +1,172 @@
+.single-product-page {
+  position: relative;
+  line-height: 3rem;
+  margin-bottom: 50px;
+
+  &:before {
+    background: linear-gradient(
+      to right,
+      #cec5c5 25%,
+      #ffcd02 25%,
+      #ffcd02 50%,
+      #e84f47 50%,
+      #e84f47 75%,
+      #65c1ac 75%
+    );
+    position: absolute;
+    content: "";
+    height: 5px;
+    right: 0;
+    left: 0;
+    top: 0;
+    margin-top: -50px;
+  }
+
+  .dashboard-spinner {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 600px;
+  }
+
+  /********   Product images carousel   *******/
+  .carousel {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    .all-dots {
+      display: flex;
+      flex-direction: column;
+      width: 20% !important;
+      height: 86% !important;
+      position: absolute;
+      top: 0;
+      left: 16px;
+      bottom: 0;
+      overflow-y: scroll;
+
+      button {
+        width: 70%;
+        border: 1px solid #ccc;
+        padding: 0 !important;
+        border-radius: 5px;
+        margin: 8px auto;
+        opacity: 0.4;
+      }
+      .carousel__dot--selected {
+        border-color: #e77600;
+        outline: none;
+        box-shadow: 0 0 3px 2px rgba(228, 121, 17, 0.5);
+        border-color: #acc;
+        opacity: 1;
+      }
+    }
+
+    /***** the slider itself ******/
+    .carousel__slider {
+      width: 80% !important;
+      margin-left: auto;
+      z-index: 100 !important;
+      background-color: #fff;
+
+      .down {
+        margin-left: 3%;
+        color: #555 !important;
+        font-size: 13px;
+        line-height: 19px;
+        font-weight: 600;
+      }
+
+      .carousel__image {
+        background-size: contain !important;
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+      .carousel__back-button {
+        height: 50px;
+        width: 50px;
+        line-height: 50px;
+        background-color: unset;
+        border: none;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        right: 96%;
+      }
+      .carousel__next-button {
+        height: 50px;
+        width: 50px;
+        line-height: 50px;
+        background-color: unset;
+        border: none;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        right: -6%;
+      }
+    }
+  }
+
+  /********   Product details  *******/
+  .product-name {
+    font-size: 21px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+      Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    color: #222;
+    text-decoration: underline;
+  }
+
+  .sold-by,
+  .product-desc {
+    font-size: 19px;
+    color: #888;
+    span {
+      font-weight: 600;
+      color: #111;
+    }
+  }
+
+  .product-price {
+    font-size: 22px;
+    color: #b12704;
+  }
+
+  .product-stock {
+    font-size: 22px;
+    color: #b12704;
+  }
+
+  .order-quantity {
+    span {
+      margin-right: 10%;
+      font-size: 19px;
+      color: #888;
+    }
+  }
+
+  .custom-select {
+    width: 5rem;
+    text-align: center;
+  }
+
+  .add-to-wish-list {
+    color: rgb(139, 102, 102);
+    font-size: 23px;
+    font-weight: 600;
+    cursor: pointer;
+
+    &:hover {
+      color: rgb(228, 25, 25);
+    }
+  }
+
+  .product-category {
+    font-size: 19px;
+    color: #888;
+
+    a {
+      text-decoration: none;
+      color: #111;
+    }
+  }
+}
